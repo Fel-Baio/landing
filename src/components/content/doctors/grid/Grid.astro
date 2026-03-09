@@ -3,42 +3,42 @@ import Card from "@components/base/Card.astro";
 ---
 
 <div class="grid md:grid-cols-3 ltablet:grid-cols-3 lg:grid-cols-3 gap-x-6 ptablet:gap-x-4 gap-y-16 pt-10">
+  <!-- Creator -->
   <div x-show="activeCategory === 'all' || activeCategory === 'cardiology'">
     <Card class="'p-4'">
       <div
-        class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800"
+        class="relative w-full h-40 rounded-lg bg-gradient-to-br from-primary-100 to-primary-200 dark:from-primary-900/30 dark:to-primary-800/20 flex items-center justify-center"
       >
         <img
-          class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
-          src="/img/illustrations/doctors/doctor-1.svg"
-          alt="Doctor"
+          class="w-20 h-20 rounded-full object-cover border-4 border-white dark:border-muted-700 shadow-lg"
+          src="https://media.cssninja.io/shuriken/avatars/2.svg"
+          alt="Creator avatar"
         />
       </div>
       <div class="font-sans mt-3">
         <h4 class="font-semibold text-muted-800 dark:text-muted-100">
-          Dr. Melissa Thorman
+          Sophia Lane
         </h4>
-        <p class="text-sm text-muted-400">Cardiologist</p>
+        <p class="text-sm text-muted-400">Content Creator</p>
       </div>
       <div class="mt-2">
         <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ergo illi
-          intellegunt quid
+          Travel vlogger & photographer sharing adventures from around the world.
         </p>
       </div>
       <div class="flex items-center justify-between font-sans mt-3">
         <div class="flex items-center gap-2">
           <button
-            tooltip="Book appointment"
+            tooltip="View links"
             class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
           >
-            <iconify-icon class="iconify w-4 h-4" icon="ph:calendar-check-duotone"></iconify-icon>
+            <iconify-icon class="iconify w-4 h-4" icon="ph:link-duotone"></iconify-icon>
           </button>
           <button
-            tooltip="Send message"
+            tooltip="Follow"
             class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
           >
-            <iconify-icon class="iconify w-4 h-4" icon="ph:chat-circle-duotone"></iconify-icon>
+            <iconify-icon class="iconify w-4 h-4" icon="ph:user-plus-duotone"></iconify-icon>
           </button>
           <button
             tooltip="View profile"
@@ -47,52 +47,51 @@ import Card from "@components/base/Card.astro";
             <iconify-icon class="iconify w-4 h-4" icon="ph:user-duotone"></iconify-icon>
           </button>
         </div>
-        <div class="flex items-center justify-end gap-2">
-          <iconify-icon class="iconify w-4 h-4 text-yellow-400" icon="uiw:star-on"></iconify-icon>
+        <div class="flex items-center justify-end gap-1">
+          <iconify-icon class="iconify w-4 h-4 text-primary-500" icon="ph:users-three-duotone"></iconify-icon>
           <span class="font-semibold text-xs text-muted-500 dark:text-muted-400"
-            >4.8/5</span
+            >48.2K</span
           >
         </div>
       </div>
     </Card>
   </div>
-  <!-- Doctor -->
+  <!-- Creator -->
   <div x-show="activeCategory === 'all' || activeCategory === 'gynaecology'">
     <Card class="'p-4'">
       <div
-        class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800"
+        class="relative w-full h-40 rounded-lg bg-gradient-to-br from-rose-100 to-rose-200 dark:from-rose-900/30 dark:to-rose-800/20 flex items-center justify-center"
       >
         <img
-          class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
-          src="/img/illustrations/doctors/doctor-2.svg"
-          alt="Doctor"
+          class="w-20 h-20 rounded-full object-cover border-4 border-white dark:border-muted-700 shadow-lg"
+          src="https://media.cssninja.io/shuriken/avatars/4.svg"
+          alt="Creator avatar"
         />
       </div>
       <div class="font-sans mt-3">
         <h4 class="font-semibold text-muted-800 dark:text-muted-100">
-          Dr. Aaron Zimmerman
+          Marcus Webb
         </h4>
-        <p class="text-sm text-muted-400">Gynaecologist</p>
+        <p class="text-sm text-muted-400">Business Coach</p>
       </div>
       <div class="mt-2">
         <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ergo illi
-          intellegunt quid
+          Helping entrepreneurs build scalable online businesses and passive income.
         </p>
       </div>
       <div class="flex items-center justify-between font-sans mt-3">
         <div class="flex items-center gap-2">
           <button
-            tooltip="Book appointment"
+            tooltip="View links"
             class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
           >
-            <iconify-icon class="iconify w-4 h-4" icon="ph:calendar-check-duotone"></iconify-icon>
+            <iconify-icon class="iconify w-4 h-4" icon="ph:link-duotone"></iconify-icon>
           </button>
           <button
-            tooltip="Send message"
+            tooltip="Follow"
             class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
           >
-            <iconify-icon class="iconify w-4 h-4" icon="ph:chat-circle-duotone"></iconify-icon>
+            <iconify-icon class="iconify w-4 h-4" icon="ph:user-plus-duotone"></iconify-icon>
           </button>
           <button
             tooltip="View profile"
@@ -101,52 +100,51 @@ import Card from "@components/base/Card.astro";
             <iconify-icon class="iconify w-4 h-4" icon="ph:user-duotone"></iconify-icon>
           </button>
         </div>
-        <div class="flex items-center justify-end gap-2">
-          <iconify-icon class="iconify w-4 h-4 text-yellow-400" icon="uiw:star-on"></iconify-icon>
+        <div class="flex items-center justify-end gap-1">
+          <iconify-icon class="iconify w-4 h-4 text-primary-500" icon="ph:users-three-duotone"></iconify-icon>
           <span class="font-semibold text-xs text-muted-500 dark:text-muted-400"
-            >4.4/5</span
+            >92.1K</span
           >
         </div>
       </div>
     </Card>
   </div>
-  <!-- Doctor -->
+  <!-- Creator -->
   <div x-show="activeCategory === 'all' || activeCategory === 'neurology'">
     <Card class="'p-4'">
       <div
-        class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800"
+        class="relative w-full h-40 rounded-lg bg-gradient-to-br from-violet-100 to-violet-200 dark:from-violet-900/30 dark:to-violet-800/20 flex items-center justify-center"
       >
         <img
-          class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
-          src="/img/illustrations/doctors/doctor-3.svg"
-          alt="Doctor"
+          class="w-20 h-20 rounded-full object-cover border-4 border-white dark:border-muted-700 shadow-lg"
+          src="https://media.cssninja.io/shuriken/avatars/3.svg"
+          alt="Creator avatar"
         />
       </div>
       <div class="font-sans mt-3">
         <h4 class="font-semibold text-muted-800 dark:text-muted-100">
-          Dr. Michael Harris
+          Elena Vasquez
         </h4>
-        <p class="text-sm text-muted-400">Neurologist</p>
+        <p class="text-sm text-muted-400">Digital Artist</p>
       </div>
       <div class="mt-2">
         <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ergo illi
-          intellegunt quid
+          Illustrator and digital artist specializing in vibrant character design.
         </p>
       </div>
       <div class="flex items-center justify-between font-sans mt-3">
         <div class="flex items-center gap-2">
           <button
-            tooltip="Book appointment"
+            tooltip="View links"
             class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
           >
-            <iconify-icon class="iconify w-4 h-4" icon="ph:calendar-check-duotone"></iconify-icon>
+            <iconify-icon class="iconify w-4 h-4" icon="ph:link-duotone"></iconify-icon>
           </button>
           <button
-            tooltip="Send message"
+            tooltip="Follow"
             class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
           >
-            <iconify-icon class="iconify w-4 h-4" icon="ph:chat-circle-duotone"></iconify-icon>
+            <iconify-icon class="iconify w-4 h-4" icon="ph:user-plus-duotone"></iconify-icon>
           </button>
           <button
             tooltip="View profile"
@@ -155,160 +153,51 @@ import Card from "@components/base/Card.astro";
             <iconify-icon class="iconify w-4 h-4" icon="ph:user-duotone"></iconify-icon>
           </button>
         </div>
-        <div class="flex items-center justify-end gap-2">
-          <iconify-icon class="iconify w-4 h-4 text-yellow-400" icon="uiw:star-on"></iconify-icon>
+        <div class="flex items-center justify-end gap-1">
+          <iconify-icon class="iconify w-4 h-4 text-primary-500" icon="ph:users-three-duotone"></iconify-icon>
           <span class="font-semibold text-xs text-muted-500 dark:text-muted-400"
-            >5/5</span
+            >134K</span
           >
         </div>
       </div>
     </Card>
   </div>
-  <!-- Doctor -->
-  <div x-show="activeCategory === 'all' || activeCategory === 'dermatology'">
-    <Card class="'p-4'">
-      <div
-        class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800"
-      >
-        <img
-          class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
-          src="/img/illustrations/doctors/doctor-4.svg"
-          alt="Doctor"
-        />
-      </div>
-      <div class="font-sans mt-3">
-        <h4 class="font-semibold text-muted-800 dark:text-muted-100">
-          Dr. Eliana Dasilva
-        </h4>
-        <p class="text-sm text-muted-400">Dermatologist</p>
-      </div>
-      <div class="mt-2">
-        <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ergo illi
-          intellegunt quid
-        </p>
-      </div>
-      <div class="flex items-center justify-between font-sans mt-3">
-        <div class="flex items-center gap-2">
-          <button
-            tooltip="Book appointment"
-            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
-            <iconify-icon class="iconify w-4 h-4" icon="ph:calendar-check-duotone"></iconify-icon>
-          </button>
-          <button
-            tooltip="Send message"
-            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
-            <iconify-icon class="iconify w-4 h-4" icon="ph:chat-circle-duotone"></iconify-icon>
-          </button>
-          <button
-            tooltip="View profile"
-            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
-            <iconify-icon class="iconify w-4 h-4" icon="ph:user-duotone"></iconify-icon>
-          </button>
-        </div>
-        <div class="flex items-center justify-end gap-2">
-          <iconify-icon class="iconify w-4 h-4 text-yellow-400" icon="uiw:star-on"></iconify-icon>
-          <span class="font-semibold text-xs text-muted-500 dark:text-muted-400"
-            >4.8/5</span
-          >
-        </div>
-      </div>
-    </Card>
-  </div>
-  <!-- Doctor -->
-  <div x-show="activeCategory === 'all' || activeCategory === 'general'">
-    <Card class="'p-4'">
-      <div
-        class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800"
-      >
-        <img
-          class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
-          src="/img/illustrations/doctors/doctor-5.svg"
-          alt="Doctor"
-        />
-      </div>
-      <div class="font-sans mt-3">
-        <h4 class="font-semibold text-muted-800 dark:text-muted-100">
-          Dr. Clark Novak
-        </h4>
-        <p class="text-sm text-muted-400">Generalist</p>
-      </div>
-      <div class="mt-2">
-        <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ergo illi
-          intellegunt quid
-        </p>
-      </div>
-      <div class="flex items-center justify-between font-sans mt-3">
-        <div class="flex items-center gap-2">
-          <button
-            tooltip="Book appointment"
-            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
-            <iconify-icon class="iconify w-4 h-4" icon="ph:calendar-check-duotone"></iconify-icon>
-          </button>
-          <button
-            tooltip="Send message"
-            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
-            <iconify-icon class="iconify w-4 h-4" icon="ph:chat-circle-duotone"></iconify-icon>
-          </button>
-          <button
-            tooltip="View profile"
-            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
-            <iconify-icon class="iconify w-4 h-4" icon="ph:user-duotone"></iconify-icon>
-          </button>
-        </div>
-        <div class="flex items-center justify-end gap-2">
-          <iconify-icon class="iconify w-4 h-4 text-yellow-400" icon="uiw:star-on"></iconify-icon>
-          <span class="font-semibold text-xs text-muted-500 dark:text-muted-400"
-            >4.5/5</span
-          >
-        </div>
-      </div>
-    </Card>
-  </div>
-  <!-- Doctor -->
+  <!-- Creator -->
   <div x-show="activeCategory === 'all' || activeCategory === 'surgery'">
     <Card class="'p-4'">
       <div
-        class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800"
+        class="relative w-full h-40 rounded-lg bg-gradient-to-br from-amber-100 to-amber-200 dark:from-amber-900/30 dark:to-amber-800/20 flex items-center justify-center"
       >
         <img
-          class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
-          src="/img/illustrations/doctors/doctor-6.svg"
-          alt="Doctor"
+          class="w-20 h-20 rounded-full object-cover border-4 border-white dark:border-muted-700 shadow-lg"
+          src="https://media.cssninja.io/shuriken/avatars/6.svg"
+          alt="Creator avatar"
         />
       </div>
       <div class="font-sans mt-3">
         <h4 class="font-semibold text-muted-800 dark:text-muted-100">
-          Dr. Jenna Holloway
+          Jordan Hayes
         </h4>
-        <p class="text-sm text-muted-400">Surgeon</p>
+        <p class="text-sm text-muted-400">Music Producer</p>
       </div>
       <div class="mt-2">
         <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ergo illi
-          intellegunt quid
+          Independent artist and beatmaker releasing original music across all platforms.
         </p>
       </div>
       <div class="flex items-center justify-between font-sans mt-3">
         <div class="flex items-center gap-2">
           <button
-            tooltip="Book appointment"
+            tooltip="View links"
             class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
           >
-            <iconify-icon class="iconify w-4 h-4" icon="ph:calendar-check-duotone"></iconify-icon>
+            <iconify-icon class="iconify w-4 h-4" icon="ph:link-duotone"></iconify-icon>
           </button>
           <button
-            tooltip="Send message"
+            tooltip="Follow"
             class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
           >
-            <iconify-icon class="iconify w-4 h-4" icon="ph:chat-circle-duotone"></iconify-icon>
+            <iconify-icon class="iconify w-4 h-4" icon="ph:user-plus-duotone"></iconify-icon>
           </button>
           <button
             tooltip="View profile"
@@ -317,52 +206,51 @@ import Card from "@components/base/Card.astro";
             <iconify-icon class="iconify w-4 h-4" icon="ph:user-duotone"></iconify-icon>
           </button>
         </div>
-        <div class="flex items-center justify-end gap-2">
-          <iconify-icon class="iconify w-4 h-4 text-yellow-400" icon="uiw:star-on"></iconify-icon>
+        <div class="flex items-center justify-end gap-1">
+          <iconify-icon class="iconify w-4 h-4 text-primary-500" icon="ph:users-three-duotone"></iconify-icon>
           <span class="font-semibold text-xs text-muted-500 dark:text-muted-400"
-            >4.9/5</span
+            >27.5K</span
           >
         </div>
       </div>
     </Card>
   </div>
-  <!-- Doctor -->
-  <div x-show="activeCategory === 'all' || activeCategory === 'gynaecology'">
+  <!-- Creator -->
+  <div x-show="activeCategory === 'all' || activeCategory === 'dermatology'">
     <Card class="'p-4'">
       <div
-        class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800"
+        class="relative w-full h-40 rounded-lg bg-gradient-to-br from-emerald-100 to-emerald-200 dark:from-emerald-900/30 dark:to-emerald-800/20 flex items-center justify-center"
       >
         <img
-          class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
-          src="/img/illustrations/doctors/doctor-7.svg"
-          alt="Doctor"
+          class="w-20 h-20 rounded-full object-cover border-4 border-white dark:border-muted-700 shadow-lg"
+          src="https://media.cssninja.io/shuriken/avatars/9.svg"
+          alt="Creator avatar"
         />
       </div>
       <div class="font-sans mt-3">
         <h4 class="font-semibold text-muted-800 dark:text-muted-100">
-          Dr. Howard Wright
+          Ava Chen
         </h4>
-        <p class="text-sm text-muted-400">Gynaecologist</p>
+        <p class="text-sm text-muted-400">Lifestyle Influencer</p>
       </div>
       <div class="mt-2">
         <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ergo illi
-          intellegunt quid
+          Fashion, wellness and minimalist living — curated for the modern lifestyle.
         </p>
       </div>
       <div class="flex items-center justify-between font-sans mt-3">
         <div class="flex items-center gap-2">
           <button
-            tooltip="Book appointment"
+            tooltip="View links"
             class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
           >
-            <iconify-icon class="iconify w-4 h-4" icon="ph:calendar-check-duotone"></iconify-icon>
+            <iconify-icon class="iconify w-4 h-4" icon="ph:link-duotone"></iconify-icon>
           </button>
           <button
-            tooltip="Send message"
+            tooltip="Follow"
             class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
           >
-            <iconify-icon class="iconify w-4 h-4" icon="ph:chat-circle-duotone"></iconify-icon>
+            <iconify-icon class="iconify w-4 h-4" icon="ph:user-plus-duotone"></iconify-icon>
           </button>
           <button
             tooltip="View profile"
@@ -371,52 +259,104 @@ import Card from "@components/base/Card.astro";
             <iconify-icon class="iconify w-4 h-4" icon="ph:user-duotone"></iconify-icon>
           </button>
         </div>
-        <div class="flex items-center justify-end gap-2">
-          <iconify-icon class="iconify w-4 h-4 text-yellow-400" icon="uiw:star-on"></iconify-icon>
+        <div class="flex items-center justify-end gap-1">
+          <iconify-icon class="iconify w-4 h-4 text-primary-500" icon="ph:users-three-duotone"></iconify-icon>
           <span class="font-semibold text-xs text-muted-500 dark:text-muted-400"
-            >4.8/5</span
+            >215K</span
           >
         </div>
       </div>
     </Card>
   </div>
-  <!-- Doctor -->
+  <!-- Creator -->
+  <div x-show="activeCategory === 'all' || activeCategory === 'general'">
+    <Card class="'p-4'">
+      <div
+        class="relative w-full h-40 rounded-lg bg-gradient-to-br from-sky-100 to-sky-200 dark:from-sky-900/30 dark:to-sky-800/20 flex items-center justify-center"
+      >
+        <img
+          class="w-20 h-20 rounded-full object-cover border-4 border-white dark:border-muted-700 shadow-lg"
+          src="https://media.cssninja.io/shuriken/avatars/10.svg"
+          alt="Creator avatar"
+        />
+      </div>
+      <div class="font-sans mt-3">
+        <h4 class="font-semibold text-muted-800 dark:text-muted-100">
+          Noah Kim
+        </h4>
+        <p class="text-sm text-muted-400">Personal Brand</p>
+      </div>
+      <div class="mt-2">
+        <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
+          Developer, writer and speaker sharing thoughts on tech and productivity.
+        </p>
+      </div>
+      <div class="flex items-center justify-between font-sans mt-3">
+        <div class="flex items-center gap-2">
+          <button
+            tooltip="View links"
+            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
+          >
+            <iconify-icon class="iconify w-4 h-4" icon="ph:link-duotone"></iconify-icon>
+          </button>
+          <button
+            tooltip="Follow"
+            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
+          >
+            <iconify-icon class="iconify w-4 h-4" icon="ph:user-plus-duotone"></iconify-icon>
+          </button>
+          <button
+            tooltip="View profile"
+            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
+          >
+            <iconify-icon class="iconify w-4 h-4" icon="ph:user-duotone"></iconify-icon>
+          </button>
+        </div>
+        <div class="flex items-center justify-end gap-1">
+          <iconify-icon class="iconify w-4 h-4 text-primary-500" icon="ph:users-three-duotone"></iconify-icon>
+          <span class="font-semibold text-xs text-muted-500 dark:text-muted-400"
+            >19.4K</span
+          >
+        </div>
+      </div>
+    </Card>
+  </div>
+  <!-- Creator -->
   <div x-show="activeCategory === 'all' || activeCategory === 'cardiology'">
     <Card class="'p-4'">
       <div
-        class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800"
+        class="relative w-full h-40 rounded-lg bg-gradient-to-br from-orange-100 to-orange-200 dark:from-orange-900/30 dark:to-orange-800/20 flex items-center justify-center"
       >
         <img
-          class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
-          src="/img/illustrations/doctors/doctor-8.svg"
-          alt="Doctor"
+          class="w-20 h-20 rounded-full object-cover border-4 border-white dark:border-muted-700 shadow-lg"
+          src="https://media.cssninja.io/shuriken/avatars/11.svg"
+          alt="Creator avatar"
         />
       </div>
       <div class="font-sans mt-3">
         <h4 class="font-semibold text-muted-800 dark:text-muted-100">
-          Dr. Kyle Adams
+          Priya Sharma
         </h4>
-        <p class="text-sm text-muted-400">Cardiologist</p>
+        <p class="text-sm text-muted-400">Video Creator</p>
       </div>
       <div class="mt-2">
         <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ergo illi
-          intellegunt quid
+          Cooking and food storytelling with recipes from South Asian cuisines.
         </p>
       </div>
       <div class="flex items-center justify-between font-sans mt-3">
         <div class="flex items-center gap-2">
           <button
-            tooltip="Book appointment"
+            tooltip="View links"
             class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
           >
-            <iconify-icon class="iconify w-4 h-4" icon="ph:calendar-check-duotone"></iconify-icon>
+            <iconify-icon class="iconify w-4 h-4" icon="ph:link-duotone"></iconify-icon>
           </button>
           <button
-            tooltip="Send message"
+            tooltip="Follow"
             class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
           >
-            <iconify-icon class="iconify w-4 h-4" icon="ph:chat-circle-duotone"></iconify-icon>
+            <iconify-icon class="iconify w-4 h-4" icon="ph:user-plus-duotone"></iconify-icon>
           </button>
           <button
             tooltip="View profile"
@@ -425,52 +365,51 @@ import Card from "@components/base/Card.astro";
             <iconify-icon class="iconify w-4 h-4" icon="ph:user-duotone"></iconify-icon>
           </button>
         </div>
-        <div class="flex items-center justify-end gap-2">
-          <iconify-icon class="iconify w-4 h-4 text-yellow-400" icon="uiw:star-on"></iconify-icon>
+        <div class="flex items-center justify-end gap-1">
+          <iconify-icon class="iconify w-4 h-4 text-primary-500" icon="ph:users-three-duotone"></iconify-icon>
           <span class="font-semibold text-xs text-muted-500 dark:text-muted-400"
-            >4.7/5</span
+            >73.8K</span
           >
         </div>
       </div>
     </Card>
   </div>
-  <!-- Doctor -->
-  <div x-show="activeCategory === 'all' || activeCategory === 'general'">
+  <!-- Creator -->
+  <div x-show="activeCategory === 'all' || activeCategory === 'gynaecology'">
     <Card class="'p-4'">
       <div
-        class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800"
+        class="relative w-full h-40 rounded-lg bg-gradient-to-br from-teal-100 to-teal-200 dark:from-teal-900/30 dark:to-teal-800/20 flex items-center justify-center"
       >
         <img
-          class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
-          src="/img/illustrations/doctors/doctor-9.svg"
-          alt="Doctor"
+          class="w-20 h-20 rounded-full object-cover border-4 border-white dark:border-muted-700 shadow-lg"
+          src="https://media.cssninja.io/shuriken/avatars/16.svg"
+          alt="Creator avatar"
         />
       </div>
       <div class="font-sans mt-3">
         <h4 class="font-semibold text-muted-800 dark:text-muted-100">
-          Dr. Emma Callaway
+          Liam Foster
         </h4>
-        <p class="text-sm text-muted-400">Generalist</p>
+        <p class="text-sm text-muted-400">Startup Founder</p>
       </div>
       <div class="mt-2">
         <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ergo illi
-          intellegunt quid
+          Building in public, sharing startup lessons and growth experiments weekly.
         </p>
       </div>
       <div class="flex items-center justify-between font-sans mt-3">
         <div class="flex items-center gap-2">
           <button
-            tooltip="Book appointment"
+            tooltip="View links"
             class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
           >
-            <iconify-icon class="iconify w-4 h-4" icon="ph:calendar-check-duotone"></iconify-icon>
+            <iconify-icon class="iconify w-4 h-4" icon="ph:link-duotone"></iconify-icon>
           </button>
           <button
-            tooltip="Send message"
+            tooltip="Follow"
             class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
           >
-            <iconify-icon class="iconify w-4 h-4" icon="ph:chat-circle-duotone"></iconify-icon>
+            <iconify-icon class="iconify w-4 h-4" icon="ph:user-plus-duotone"></iconify-icon>
           </button>
           <button
             tooltip="View profile"
@@ -479,52 +418,51 @@ import Card from "@components/base/Card.astro";
             <iconify-icon class="iconify w-4 h-4" icon="ph:user-duotone"></iconify-icon>
           </button>
         </div>
-        <div class="flex items-center justify-end gap-2">
-          <iconify-icon class="iconify w-4 h-4 text-yellow-400" icon="uiw:star-on"></iconify-icon>
+        <div class="flex items-center justify-end gap-1">
+          <iconify-icon class="iconify w-4 h-4 text-primary-500" icon="ph:users-three-duotone"></iconify-icon>
           <span class="font-semibold text-xs text-muted-500 dark:text-muted-400"
-            >4.3/5</span
+            >55.3K</span
           >
         </div>
       </div>
     </Card>
   </div>
-  <!-- Doctor -->
-  <div x-show="activeCategory === 'all' || activeCategory === 'general'">
+  <!-- Creator -->
+  <div x-show="activeCategory === 'all' || activeCategory === 'neurology'">
     <Card class="'p-4'">
       <div
-        class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800"
+        class="relative w-full h-40 rounded-lg bg-gradient-to-br from-fuchsia-100 to-fuchsia-200 dark:from-fuchsia-900/30 dark:to-fuchsia-800/20 flex items-center justify-center"
       >
         <img
-          class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
-          src="/img/illustrations/doctors/doctor-10.svg"
-          alt="Doctor"
+          class="w-20 h-20 rounded-full object-cover border-4 border-white dark:border-muted-700 shadow-lg"
+          src="https://media.cssninja.io/shuriken/avatars/18.svg"
+          alt="Creator avatar"
         />
       </div>
       <div class="font-sans mt-3">
         <h4 class="font-semibold text-muted-800 dark:text-muted-100">
-          Dr. Nasseer Al Hussein
+          Zoe Martinez
         </h4>
-        <p class="text-sm text-muted-400">Generalist</p>
+        <p class="text-sm text-muted-400">Graphic Designer</p>
       </div>
       <div class="mt-2">
         <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ergo illi
-          intellegunt quid
+          Brand identity designer helping founders craft stunning visual identities.
         </p>
       </div>
       <div class="flex items-center justify-between font-sans mt-3">
         <div class="flex items-center gap-2">
           <button
-            tooltip="Book appointment"
+            tooltip="View links"
             class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
           >
-            <iconify-icon class="iconify w-4 h-4" icon="ph:calendar-check-duotone"></iconify-icon>
+            <iconify-icon class="iconify w-4 h-4" icon="ph:link-duotone"></iconify-icon>
           </button>
           <button
-            tooltip="Send message"
+            tooltip="Follow"
             class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
           >
-            <iconify-icon class="iconify w-4 h-4" icon="ph:chat-circle-duotone"></iconify-icon>
+            <iconify-icon class="iconify w-4 h-4" icon="ph:user-plus-duotone"></iconify-icon>
           </button>
           <button
             tooltip="View profile"
@@ -533,118 +471,10 @@ import Card from "@components/base/Card.astro";
             <iconify-icon class="iconify w-4 h-4" icon="ph:user-duotone"></iconify-icon>
           </button>
         </div>
-        <div class="flex items-center justify-end gap-2">
-          <iconify-icon class="iconify w-4 h-4 text-yellow-400" icon="uiw:star-on"></iconify-icon>
+        <div class="flex items-center justify-end gap-1">
+          <iconify-icon class="iconify w-4 h-4 text-primary-500" icon="ph:users-three-duotone"></iconify-icon>
           <span class="font-semibold text-xs text-muted-500 dark:text-muted-400"
-            >4.9/5</span
-          >
-        </div>
-      </div>
-    </Card>
-  </div>
-  <!-- Doctor -->
-  <div x-show="activeCategory === 'all' || activeCategory === 'surgery'">
-    <Card class="'p-4'">
-      <div
-        class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800"
-      >
-        <img
-          class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
-          src="/img/illustrations/doctors/doctor-11.svg"
-          alt="Doctor"
-        />
-      </div>
-      <div class="font-sans mt-3">
-        <h4 class="font-semibold text-muted-800 dark:text-muted-100">
-          Dr. Kevin Wheeler
-        </h4>
-        <p class="text-sm text-muted-400">Surgeon</p>
-      </div>
-      <div class="mt-2">
-        <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ergo illi
-          intellegunt quid
-        </p>
-      </div>
-      <div class="flex items-center justify-between font-sans mt-3">
-        <div class="flex items-center gap-2">
-          <button
-            tooltip="Book appointment"
-            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
-            <iconify-icon class="iconify w-4 h-4" icon="ph:calendar-check-duotone"></iconify-icon>
-          </button>
-          <button
-            tooltip="Send message"
-            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
-            <iconify-icon class="iconify w-4 h-4" icon="ph:chat-circle-duotone"></iconify-icon>
-          </button>
-          <button
-            tooltip="View profile"
-            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
-            <iconify-icon class="iconify w-4 h-4" icon="ph:user-duotone"></iconify-icon>
-          </button>
-        </div>
-        <div class="flex items-center justify-end gap-2">
-          <iconify-icon class="iconify w-4 h-4 text-yellow-400" icon="uiw:star-on"></iconify-icon>
-          <span class="font-semibold text-xs text-muted-500 dark:text-muted-400"
-            >4.3/5</span
-          >
-        </div>
-      </div>
-    </Card>
-  </div>
-  <!-- Doctor -->
-  <div x-show="activeCategory === 'all' || activeCategory === 'dermatology'">
-    <Card class="'p-4'">
-      <div
-        class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800"
-      >
-        <img
-          class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
-          src="/img/illustrations/doctors/doctor-12.svg"
-          alt="Doctor"
-        />
-      </div>
-      <div class="font-sans mt-3">
-        <h4 class="font-semibold text-muted-800 dark:text-muted-100">
-          Dr. Adam Grant
-        </h4>
-        <p class="text-sm text-muted-400">Dermatologist</p>
-      </div>
-      <div class="mt-2">
-        <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ergo illi
-          intellegunt quid
-        </p>
-      </div>
-      <div class="flex items-center justify-between font-sans mt-3">
-        <div class="flex items-center gap-2">
-          <button
-            tooltip="Book appointment"
-            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
-            <iconify-icon class="iconify w-4 h-4" icon="ph:calendar-check-duotone"></iconify-icon>
-          </button>
-          <button
-            tooltip="Send message"
-            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
-            <iconify-icon class="iconify w-4 h-4" icon="ph:chat-circle-duotone"></iconify-icon>
-          </button>
-          <button
-            tooltip="View profile"
-            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
-          >
-            <iconify-icon class="iconify w-4 h-4" icon="ph:user-duotone"></iconify-icon>
-          </button>
-        </div>
-        <div class="flex items-center justify-end gap-2">
-          <iconify-icon class="iconify w-4 h-4 text-yellow-400" icon="uiw:star-on"></iconify-icon>
-          <span class="font-semibold text-xs text-muted-500 dark:text-muted-400"
-            >4.9/5</span
+            >41.7K</span
           >
         </div>
       </div>
